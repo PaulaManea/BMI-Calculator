@@ -1,0 +1,559 @@
+@media only screen and (min-width: 800px) {
+
+* {
+  font-family: Quicksand;
+  font-size: 30px;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand";
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: linear-gradient(to bottom right, #ffffff, #b83733);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  font-size: 30px;
+  align-items: center;
+  overflow: hidden;
+  background-color: #797878;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 40px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.contact_navbar {
+  background-color: #b83733;
+  color: white;
+}
+
+nav a.contact_navbar:hover {
+  background-color: #912320;
+}
+
+.logo_image {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+h1 b {
+  color: black;
+  font-size: 40px;
+}
+
+h1{
+  margin-bottom: 100px;
+}
+
+h2 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  width: 65%;
+  align-self: center;
+}
+
+.right_section {
+  flex: 2;
+}
+
+.left_section {
+  flex: 2;
+  text-align: justify;
+  align-self: center;
+}
+ 
+#sendMessage {
+  height: auto;
+}
+
+form {
+  padding: 30px;
+  background-color: #ffffff; 
+  margin: 20px auto 20px auto;
+  border-radius: 20px;
+  margin: 20px auto 20px auto;
+  display: block;
+  border: solid 1px #b83733; 
+  box-shadow: 0 0 40px 0 #e9cac8;
+}
+
+form:hover {
+  box-shadow: 0 0 60px 0 #e9c4c4;
+  transition: .3s;
+  transform: scale(1.01);
+}
+
+.text_input {
+  border-radius: 10px;
+  background-color: #fcebe9;
+  cursor: pointer;
+}
+
+.text_input:hover {
+  background-color:#f3d7d3;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 5px 10px;  
+  border: 1px; 
+  border-radius: 10px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+button {
+  text-align: center;
+  font-size: 30px;
+  background-color: #b83733;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin: auto;
+  display: block;
+  outline: none;
+}
+
+button:hover {
+  background-color: #912320;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #912320;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 20px;
+
+  padding: 20px;
+  margin: 20px 0 100px;
+}
+
+footer {
+  background-color: #797878;
+}
+
+.footer_sections {
+  display: flex;
+  font-size: 28px;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: center;
+  gap: 500px;
+}
+
+.footer_buttons {
+  font-size: 40px;
+  padding: 40px;
+  background-color: #b83733;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: #b83733;
+  color: #fff;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer_buttons:hover {
+  background-color: #912320;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popup_hello {
+  color: #bd5f5c;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  * {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand";
+    font-size: 16px;
+    color: black;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to bottom right, #ffffff, #b83733);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    height: 80px;
+    font-size: 15px;
+    align-items: center;
+    overflow: hidden;
+    background-color: #797878;
+  }
+  
+  nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  nav a.contact_navbar {
+    background-color: #b83733;
+    color: white;
+  }
+  
+  nav a.contact_navbar:hover {
+    background-color: #912320;
+  }
+  
+  .logo_image {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  h1 b {
+    color: black;
+    font-size: 20px;
+  }
+  
+  h1{
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    background-color: #fff;
+    width: 65%;
+    align-self: center;
+    flex-direction: column;
+  }
+  
+  .right_section {
+    flex: 2;
+  }
+  
+  .left_section {
+    flex: 2;
+    text-align: justify;
+    align-self: center;
+  }
+   
+  #sendMessage {
+    height: auto;
+  }
+  
+  form {
+    padding: 20px;
+    background-color: #ffffff; 
+    margin: 20px auto 20px auto;
+    border-radius: 20px;
+    margin: 20px auto 20px auto;
+    display: block;
+    border: solid 1px #b83733; 
+    box-shadow: 0 0 40px 0 #e9cac8;
+  }
+  
+  form:hover {
+    box-shadow: 0 0 60px 0 #e9c4c4;
+    transition: .3s;
+    transform: scale(1.01);
+  }
+  
+  .text_input {
+    border-radius: 10px;
+    background-color: #fcebe9;
+    cursor: pointer;
+  }
+  
+  .text_input:hover {
+    background-color:#f3d7d3;
+  }
+  
+  
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 5px 10px;  
+    border: 1px; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button {
+    text-align: center;
+    font-size: 15px;
+    background-color: #b83733;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 140px;
+    margin: auto;
+    display: block;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #912320;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type="submit"]:hover {
+    background-color: #912320;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px;
+  }
+  
+  footer {
+    background-color: #797878;
+  }
+  
+  .footer_sections {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-evenly;
+  }
+  
+  .footer_buttons {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #b83733;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    background-color: #b83733;
+    color: #fff;
+    display: block;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .footer_buttons:hover {
+    background-color: #912320;
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  /* Popup container */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  .popup_hello {
+    color: #bd5f5c;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+
+  }
+
+}

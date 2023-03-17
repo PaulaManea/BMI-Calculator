@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
+      rel="stylesheet"
+    /> 
+</head>
+<body>
+    <nav>
+        <img class="logo_image" src="../images/new logo.png"> 
+        <a class="bmi_navbar" href="../index.html">BMI Calculator</a>
+        <a class="healthy_navbar" href="../Healthy lifestyle/index.html">Healthy Lifestyle</a>
+        <a class="contact_navbar" href="./index.html">Contact us</a>
+    </nav>
+
+
+    <div>
+        <h2>Let's Get in Touch.</h2>
+    </div>
+
+    <div class="container">
+        
+        <div class="left_section">
+            <h1><b>Contact Info</b></h1>
+            <div>
+                <p><b>Phone:</b></p>
+                <p>+1234567890</p>
+                <p>+9876543210</p>
+            </div>
+            <div>
+                <p><b>Email:</b></p>
+                <p>example@info.com</p>
+            </div>
+            <div>
+                <p><b>Adress:</b></p>
+                <p>6743 last street , Abcd, Xyz</p>
+            </div>
+        </div>
+        <div class="right_section">
+            <form>
+                <div class="first_row">
+                    <label>Name</label>
+                    <input class="text_input" type="text"  id="fname" placeholder="Your name...">
+                </div>
+                <div class="second_row">
+                    <label>Email</label>
+                    <input class="text_input" type="text" id="email" placeholder="name@name.com" />
+                </div>
+                <div class="third_row">
+                    <label>Phone Number</label>
+                    <input class="text_input" type="text" id="phone_number" placeholder="+40123456789" />
+                </div>
+                <div class="fourth_row"><label for="country">Country</label>
+                  <select class="text_input" id="country" name="country">
+                    <option>Romania</option>
+                    <option>Austria</option>
+                    <option>Denmark</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Greece</option>
+                    <option>Italy</option>
+                    <option>Poland</option>
+                    <option>Portugal</option>
+                    <option>Spain</option>
+                    <option>Sweden</option>
+                  </select>
+                </div>
+                <div class="fifth_row">
+                    <label>Message</label>
+                    <textarea class="text_input" id="subject" placeholder="Write something..." style="height:200px"></textarea>
+                </div>
+                <button id="sendMessage" type="button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    
+
+    <footer>
+        <div class="footer_sections">
+            <p class="footer_buttons popup" onclick="popUp()">About<span class="popuptext" id="myPopup"><b class="popup_hello">Hellooo!</b><br>My name is Paula!<br>I'm a Junior Front-End Developer and this is my first project.<br>Hope you enjoy it!</span></p>
+            <a href="index.html"><p class="footer_buttons">Contact</p></a>
+        </div>
+        <div>
+            <p class="copyright">
+              © 2023 Paula-Gabriela Manea. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./javascript.js"></script>
+</body>
+</html>
